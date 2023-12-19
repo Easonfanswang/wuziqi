@@ -94,7 +94,7 @@ export default function NewGame(props) {
     }
     function finishReset() {
         // 有一方获胜时选择重置游戏
-        if (alert(`游戏已结束，获胜者是${state.user === 1 ? "白棋" : "黑棋"},是否重置游戏？`)) {
+        if (alert(`游戏已结束，获胜者是${state.user === 0 ? "白棋" : "黑棋"},是否重置游戏？`)) {
             reset()
         }
     }
