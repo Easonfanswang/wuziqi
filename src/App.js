@@ -10,12 +10,12 @@ export default function NewGame(props) {
     const { width = 800, height = 800 } = props;
     const { playWidth = 880, playHeight = 880 } = props;
 
-    let [isWhite, setIsWhite] = useState(true);
+    const [isWhite, setIsWhite] = useState(true);
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    let canvasRef = useRef(null);
-    let chessRef = useRef(null);
-    let routeToWinRef = useRef(null);
+    const canvasRef = useRef(null);
+    const chessRef = useRef(null);
+    const routeToWinRef = useRef(null);
 
     const { history, result, gameOver } = state;
 
